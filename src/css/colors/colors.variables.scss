@@ -1,0 +1,23 @@
+// Status Colours
+$positive-light: #AAE8D2;
+$negative-light: #FED1D4;
+$warning-light: #FFD0AB;
+$info-light: #CFDCFF;
+$overdue-light: #FFD0D6;
+
+// Neutral Colours
+$neutral-0-text: #000F33;
+$neutral-1-text: #434D63;
+$neutral-2: #565F77;
+$neutral-3-text: #8791AB;
+$neutral-4: #C1CAE4;
+$neutral-5: #EAEDFF;
+
+// Backgrounds
+$bg-0: #FAFAFF;
+$bg-1: #FFFFFF;
+$bg-hover: #D9E8FF;
+$bg-overlay-50: #565F77;
+
+$gradient-0: linear-gradient(90deg, $secondary, $primary);
+$gradient-45: linear-gradient(45deg, $secondary, $primary);

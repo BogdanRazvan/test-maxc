@@ -1,0 +1,122 @@
+
+
+// Layout version 1
+@media (min-width: $breakpoint-xl + 1) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr)) repeat(1, minmax(300px, 2fr));
+    grid-template-rows: 600px 100px;
+    margin: auto;
+    gap: 24px;
+  }
+}
+
+/* l.scss */
+@media (min-width: $breakpoint-lg + 1) and (max-width: $breakpoint-xl) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 600px 100px;
+    margin: 32px;
+    gap: 24px;
+  }
+}
+
+/* md.scss */
+@media (min-width: $breakpoint-md + 1) and (max-width: $breakpoint-lg) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 600px 100px;
+    margin: 24px;
+    gap: 16px;
+  }
+}
+
+/* s.scss */
+@media (min-width: $breakpoint-sm + 1) and (max-width: $breakpoint-md) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 600px 100px;
+    margin: 24px;
+    gap: 16px;
+  }
+}
+
+/* xs.scss */
+@media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 600px 100px;
+    margin: 24px;
+    gap: 16px;
+  }
+}
+
+
+
+// Layout version 2
+// @for $i from 1 through 7 {
+//   .card-#{$i} {
+//     grid-area: card-#{$i};
+//   }
+// }
+
+// @media (min-width: $breakpoint-xl + 1) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr;
+//     grid-template-areas:
+//     "card-1 card-2 card-3"
+//     "card-4 card-5 card-5"
+//     "card-6 . card-7";
+//     margin: minmax(24px, 32px);
+//     gap: 24px;
+//   }
+// }
+
+// /* l.scss */
+// @media (min-width: $breakpoint-lg + 1) and (max-width: $breakpoint-xl) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//     grid-template-rows: 400px 200px;
+//     margin: 32px;
+//     gap: 24px;
+//   }
+// }
+
+// /* md.scss */
+// @media (min-width: $breakpoint-md + 1) and (max-width: $breakpoint-lg) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//     grid-template-rows: 400px 200px;
+//     margin: 24px;
+//     gap: 16px;
+//   }
+// }
+
+// /* s.scss */
+// @media (min-width: $breakpoint-sm + 1) and (max-width: $breakpoint-md) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//     grid-template-rows: 400px 200px;
+//     margin: 24px;
+//     gap: 16px;
+//   }
+// }
+
+// /* xs.scss */
+// @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//     grid-template-rows: 400px 200px;
+//     margin: 24px;
+//     gap: 16px;
+//   }
+// }
