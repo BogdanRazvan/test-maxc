@@ -7,7 +7,7 @@
     grid-template-columns: repeat(2, minmax(300px, 1fr)) repeat(1, minmax(300px, 2fr));
     grid-template-rows: 600px 100px;
     margin: auto;
-    gap: 16px;
+    gap: 24px;
   }
 }
 
@@ -18,7 +18,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 600px 100px;
     margin: 32px;
-    gap: 16px;
+    gap: 24px;
   }
 }
 
@@ -29,7 +29,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 600px 100px;
     margin: 24px;
-    gap: 24px;
+    gap: 16px;
   }
 }
 
@@ -40,7 +40,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 600px 100px;
     margin: 24px;
-    gap: 24px;
+    gap: 16px;
   }
 }
 
@@ -51,7 +51,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 600px 100px;
     margin: 24px;
-    gap: 24px;
+    gap: 16px;
   }
 }
 
@@ -73,7 +73,7 @@
 //     "card-4 card-5 card-5"
 //     "card-6 . card-7";
 //     margin: minmax(24px, 32px);
-//     gap: 16px;
+//     gap: 24px;
 //   }
 // }
 
@@ -84,7 +84,7 @@
 //     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 //     grid-template-rows: 400px 200px;
 //     margin: 32px;
-//     gap: 16px;
+//     gap: 24px;
 //   }
 // }
 
@@ -95,7 +95,7 @@
 //     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 //     grid-template-rows: 400px 200px;
 //     margin: 24px;
-//     gap: 24px;
+//     gap: 16px;
 //   }
 // }
 
@@ -106,7 +106,7 @@
 //     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 //     grid-template-rows: 400px 200px;
 //     margin: 24px;
-//     gap: 24px;
+//     gap: 16px;
 //   }
 // }
 
@@ -117,6 +117,6 @@
 //     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 //     grid-template-rows: 400px 200px;
 //     margin: 24px;
-//     gap: 24px;
+//     gap: 16px;
 //   }
 // }
