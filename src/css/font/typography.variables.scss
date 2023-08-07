@@ -1,0 +1,38 @@
+// Mixins for generating classes
+@mixin quasar-text-style($class, $size, $line-height, $weight) {
+  .#{$class} {
+    font-size: $size;
+    line-height: $line-height;
+    font-weight: $weight;
+  }
+}
+
+// Font Weights
+$font-weight-h1: 700;
+$font-weight-h2: 700;
+$font-weight-h3: 700;
+$font-weight-h4: 700;
+$font-weight-p: 400;
+$font-weight-button-large: 600;
+$font-weight-button-small: 600;
+
+$h1-class: 'text-h1';
+$h2-class: 'text-h2';
+$h3-class: 'text-h3';
+$h4-class: 'text-h4';
+$p-class: 'p';
+$large-600-class: 'large-600';
+$large-400-class: 'large-400';
+$medium-600-class: 'medium-600';
+$medium-400-class: 'medium-400';
+$small-800-class: 'small-800';
+$small-700-class: 'small-700';
+$small-600-class: 'small-600';
+$small-400-class: 'small-400';
+$caption-large-class: 'caption-large';
+$caption-small-800-class: 'caption-small-800';
+$caption-small-700-class: 'caption-small-700';
+$caption-small-600-class: 'caption-small-600';
+$caption-small-500-class: 'caption-small-500';
+$button-large-class: 'button-large';
+$button-small-class: 'button-small';
