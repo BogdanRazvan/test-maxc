@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <CardExternal v-for="i in 7" :key="i" style="overflow: auto" :class="`card-${i}`">
+      <CardExternal v-for="i in 6" :key="i" style="overflow: auto" :class="`card-${i} shadow-${i}`">
         <template v-slot:header>Card-{{i}}</template>
         <div class="q-pa-md text-neutral-1-text">
           <h1 class="text-h1">H1</h1>

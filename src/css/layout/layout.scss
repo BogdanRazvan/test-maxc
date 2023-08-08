@@ -1,78 +1,59 @@
-
-
 // Layout version 1
-@media (min-width: $breakpoint-xl + 1) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr)) repeat(1, minmax(300px, 2fr));
-    grid-template-rows: 600px 100px;
-    margin: auto;
-    gap: 24px;
-  }
-}
-
-/* l.scss */
-@media (min-width: $breakpoint-lg + 1) and (max-width: $breakpoint-xl) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 600px 100px;
-    margin: 32px;
-    gap: 24px;
-  }
-}
-
-/* md.scss */
-@media (min-width: $breakpoint-md + 1) and (max-width: $breakpoint-lg) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 600px 100px;
-    margin: 24px;
-    gap: 16px;
-  }
-}
-
-/* s.scss */
-@media (min-width: $breakpoint-sm + 1) and (max-width: $breakpoint-md) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 600px 100px;
-    margin: 24px;
-    gap: 16px;
-  }
-}
-
-/* xs.scss */
-@media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 600px 100px;
-    margin: 24px;
-    gap: 16px;
-  }
-}
-
-
-
-// Layout version 2
-// @for $i from 1 through 7 {
-//   .card-#{$i} {
-//     grid-area: card-#{$i};
-//   }
-// }
-
 // @media (min-width: $breakpoint-xl + 1) {
 //   .container {
 //     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     grid-template-areas:
-//     "card-1 card-2 card-3"
-//     "card-4 card-5 card-5"
-//     "card-6 . card-7";
-//     margin: minmax(24px, 32px);
+//     grid-template-columns: repeat(2, 3fr) repeat(1, 6fr);
+//     margin: auto;
+//     gap: $flex-gutter-xl;
+//   }
+// }
+
+// /* l.scss */
+// @media (min-width: $breakpoint-lg + 1) and (max-width: $breakpoint-xl) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(2, 6fr);
+//     margin: 32px;
+//     gap: $flex-gutter-lg;
+//   }
+// }
+
+// /* md.scss */
+// @media (min-width: $breakpoint-md + 1) and (max-width: $breakpoint-lg) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(2, 5fr);
+//     margin: 24px;
+//     gap: $flex-gutter-md;
+//   }
+// }
+
+// /* s.scss */
+// @media (min-width: $breakpoint-sm + 1) and (max-width: $breakpoint-md) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(2, 4fr);
+//     margin: 24px;
+//     gap: $flex-gutter-sm;
+//   }
+// }
+
+// /* xs.scss */
+// @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(1, 4fr);
+//     margin: 24px;
+//     gap: $flex-gutter-xs;
+//   }
+// }
+
+// Layout version 2
+// @media (min-width: $breakpoint-xl + 1) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+//     margin: auto;
 //     gap: 24px;
 //   }
 // }
@@ -82,7 +63,6 @@
 //   .container {
 //     display: grid;
 //     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-//     grid-template-rows: 400px 200px;
 //     margin: 32px;
 //     gap: 24px;
 //   }
@@ -93,7 +73,6 @@
 //   .container {
 //     display: grid;
 //     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-//     grid-template-rows: 400px 200px;
 //     margin: 24px;
 //     gap: 16px;
 //   }
@@ -104,7 +83,6 @@
 //   .container {
 //     display: grid;
 //     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-//     grid-template-rows: 400px 200px;
 //     margin: 24px;
 //     gap: 16px;
 //   }
@@ -115,8 +93,151 @@
 //   .container {
 //     display: grid;
 //     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-//     grid-template-rows: 400px 200px;
 //     margin: 24px;
 //     gap: 16px;
 //   }
 // }
+
+// // Layout version 3
+// @for $i from 1 through 6 {
+//   .card-#{$i} {
+//     grid-area: card-#{$i};
+//   }
+// }
+
+// @media (min-width: $breakpoint-xl + 1) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     grid-template-areas:
+//     "card-1 card-1 card-1 card-1 card-2 card-2 card-2 card-3 card-3 card-3 card-3 card-3"
+//     "card-4 card-4 card-4 card-5 card-5 card-5 card-5 card-5 card-5 card-5 card-5 card-5"
+//     "card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6";
+//     margin: auto;
+//     gap: 24px;
+//   }
+// }
+
+// /* l.scss */
+// @media (min-width: $breakpoint-lg + 1) and (max-width: $breakpoint-xl) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     grid-template-areas:
+//     "card-1 card-1 card-1 card-1 card-2 card-2 card-2 card-2 card-3 card-3 card-3 card-3"
+//     "card-4 card-4 card-4 card-4 card-4 card-4 card-5 card-5 card-5 card-5 card-5 card-5"
+//     "card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6";
+//     margin: 32px;
+//     gap: 24px;
+//   }
+// }
+
+// /* md.scss */
+// @media (min-width: $breakpoint-md + 1) and (max-width: $breakpoint-lg) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(10, 1fr);
+//     grid-template-areas:
+//     "card-1 card-1 card-1 card-1 card-2 card-2 card-2 card-2 card-3 card-3"
+//     "card-4 card-4 card-4 card-4 card-4 card-4 card-5 card-5 card-5 card-5"
+//     "card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6";
+//     margin: 24px;
+//     gap: 24px;
+//   }
+// }
+
+// /* s.scss */
+// @media (min-width: $breakpoint-sm + 1) and (max-width: $breakpoint-md) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(8, 1fr);
+//     grid-template-areas:
+//     "card-1 card-1 card-1 card-1 card-2 card-2 card-2 card-2"
+//     "card-3 card-3 card-3 card-4 card-4 card-4 card-4 card-5"
+//     "card-6 card-6 card-6 card-6 card-6 card-6 card-6 card-6";
+//     margin: 24px;
+//     gap: 24px;
+//   }
+// }
+
+// /* xs.scss */
+// @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
+//   .container {
+//     display: grid;
+//     grid-template-columns: repeat(4, minmax(100, 1fr));
+//     grid-template-areas:
+//     "card-1 card-1 card-1 card-1"
+//     "card-2 card-2 card-3 card-3"
+//     "card-4 card-4 card-4 card-4"
+//     "card-5 card-5 card-5 card-5"
+//     "card-6 card-6 card-6 card-6";
+//     margin: 24px;
+//     gap: 24px;
+//   }
+// }
+
+// // Layout version 4
+@media (min-width: $breakpoint-xl + 1) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 32px;
+    column-gap: 24px;
+    row-gap: 24px;
+
+    .card-1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+
+    .card-2 {
+      grid-column-start: 3;
+      grid-column-end: 9;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+
+    .card-3 {
+      grid-column-start: 9;
+      grid-column-end: 13;
+      grid-row-start: 1;
+      grid-row-end: 3;
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+
+    .card-4 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+
+    .card-5 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4s;
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+
+    .card-6 {
+      grid-column-start: 3;
+      grid-column-end: 13;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      column-gap: 24px;
+      row-gap: 24px;
+    }
+  }
+}

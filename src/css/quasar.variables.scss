@@ -102,8 +102,6 @@ $info      : #0047FF;
 $warning   : #FB8224;
 $overdue   : #C11041;
 
-
-
 $dimmed-background       : rgba(0, 0, 0, .4) !default;
 $light-dimmed-background : rgba(255, 255, 255, .6) !default;
 
@@ -409,7 +407,7 @@ $z-tooltip            : 9000 !default;
 $z-notify             : 9500 !default;
 $z-max                : 9998 !default;
 
-$shadow-color         : #000 !default;
+$shadow-color         : #000F33 !default;
 $shadow-transition    : box-shadow .28s cubic-bezier(.4, 0, .2, 1) !default;
 $inset-shadow         : 0 7px 9px -7px rgba($shadow-color, .7) inset !default;
 $inset-shadow-down    : 0 -7px 9px -7px rgba($shadow-color, .7) inset !default;
@@ -419,12 +417,12 @@ $elevation-penumbra   : rgba($shadow-color, .14) !default;
 $elevation-ambient    : rgba($shadow-color, .12) !default;
 
 $shadow-0  : 0 0 0 $elevation-umbra, 0 0 0 $elevation-penumbra, 0 0 0 $elevation-ambient !default;
-$shadow-1  : 0 1px 3px $elevation-umbra, 0 1px 1px $elevation-penumbra, 0 2px 1px -1px $elevation-ambient !default;
-$shadow-2  : 0 1px 5px $elevation-umbra, 0 2px 2px $elevation-penumbra, 0 3px 1px -2px $elevation-ambient !default;
-$shadow-3  : 0 1px 8px $elevation-umbra, 0 3px 4px $elevation-penumbra, 0 3px 3px -2px $elevation-ambient !default;
-$shadow-4  : 0 2px 4px -1px $elevation-umbra, 0 4px 5px $elevation-penumbra, 0 1px 10px $elevation-ambient !default;
-$shadow-5  : 0 3px 5px -1px $elevation-umbra, 0 5px 8px $elevation-penumbra, 0 1px 14px $elevation-ambient !default;
-$shadow-6  : 0 3px 5px -1px $elevation-umbra, 0 6px 10px $elevation-penumbra, 0 1px 18px $elevation-ambient !default;
+$shadow-1  : 0 1px 2px 0 rgba($shadow-color, 0.25);
+$shadow-2  : 0 7px 20px 0 rgba($shadow-color, 0.07);
+$shadow-3  : 0 -7px 10px 0 rgba($shadow-color, 0.07);
+$shadow-4  : 0 1px 6px 0 rgba($shadow-color, 0.20);
+$shadow-5  : 0 0 8px 2px rgba($secondary, 1);
+$shadow-6  : inset 0 0 8px 2px rgba($secondary, 1);
 $shadow-7  : 0 4px 5px -2px $elevation-umbra, 0 7px 10px 1px $elevation-penumbra, 0 2px 16px 1px $elevation-ambient !default;
 $shadow-8  : 0 5px 5px -3px $elevation-umbra, 0 8px 10px 1px $elevation-penumbra, 0 3px 14px 2px $elevation-ambient !default;
 $shadow-9  : 0 5px 6px -3px $elevation-umbra, 0 9px 12px 1px $elevation-penumbra, 0 3px 16px 2px $elevation-ambient !default;
