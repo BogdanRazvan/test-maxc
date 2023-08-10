@@ -2,14 +2,6 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated class="bg-gradient-0">
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
 
         <q-toolbar-title>
           Quasar App
@@ -20,16 +12,19 @@
     </q-header>
 
     <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
+      :model-value="drawer"
+      :show-if-above="true"
+      :breakpoint="0"
+      :mini="miniState"
+      persistent
       bordered
     >
       <q-list>
-        <q-item-label
+        <!-- <q-item-label
           header
         >
           Essential Links
-        </q-item-label>
+        </q-item-label> -->
 
         <EssentialLink
           v-for="link in essentialLinks"
@@ -46,9 +41,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import EssentialLink, { EssentialLinkProps } from 'components/EssentialLink.vue'
+import { useQuasar } from 'quasar'
+import { Q } from 'app/dist/index-83b9568d'
 
+const $q = useQuasar()
 const essentialLinks: EssentialLinkProps[] = [
   {
     title: 'Docs',
@@ -94,9 +92,8 @@ const essentialLinks: EssentialLinkProps[] = [
   }
 ]
 
-const leftDrawerOpen = ref(false)
+const drawer = ref(true)
+// Determine if the mini-menu should be visible
+const miniState = computed(() => $q.screen.lt.lg)
 
-function toggleLeftDrawer () {
-  leftDrawerOpen.value = !leftDrawerOpen.value
-}
 </script>

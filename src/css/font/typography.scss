@@ -1,4 +1,4 @@
-@import './typography.variables.scss';
+@import 'typography.variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
 // Define the font stack
@@ -17,28 +17,32 @@ html, body {
   text-decoration: underline;
 }
 
-
 /* xl.scss */
 @media (min-width: $breakpoint-xl + 1) {
   @import 'typography-xl.variables.scss';
+  @import 'typography.classes.scss';
 }
 
 /* l.scss */
 @media (min-width: $breakpoint-lg + 1) and (max-width: $breakpoint-xl) {
   @import 'typography-l.variables.scss';
+  @import 'typography.classes.scss';
 }
 
 /* md.scss */
 @media (min-width: $breakpoint-md + 1) and (max-width: $breakpoint-lg) {
   @import 'typography-m.variables.scss';
+  @import 'typography.classes.scss';
 }
 
 /* s.scss */
 @media (min-width: $breakpoint-sm + 1) and (max-width: $breakpoint-md) {
   @import 'typography-s.variables.scss';
+  @import 'typography.classes.scss';
 }
 
 /* xs.scss */
 @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) {
   @import 'typography-xs.variables.scss';
+  @import 'typography.classes.scss';
 }

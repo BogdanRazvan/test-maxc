@@ -55,22 +55,6 @@ $font-weight-caption-small-700: 700;
 $font-weight-caption-small-600: 600;
 
 // Apply mixins
-@include quasar-text-style($h1-class, $font-size-h1, $line-height-h1, $font-weight-h1);
-@include quasar-text-style($h2-class, $font-size-h2, $line-height-h2, $font-weight-h2);
-@include quasar-text-style($h3-class, $font-size-h3, $line-height-h3, $font-weight-h3);
-@include quasar-text-style($h4-class, $font-size-h4, $line-height-h4, $font-weight-h4);
-@include quasar-text-style($p-class, $font-size-p, $line-height-p, $font-weight-p);
-@include quasar-text-style($large-600-class, $font-size-large-600, $line-height-large-600, $font-weight-large-600);
-@include quasar-text-style($large-400-class, $font-size-large-400, $line-height-large-400, $font-weight-large-400);
-@include quasar-text-style($medium-600-class, $font-size-medium-600, $line-height-medium-600, $font-weight-medium-600);
-@include quasar-text-style($medium-400-class, $font-size-medium-400, $line-height-medium-400, $font-weight-medium-400);
-@include quasar-text-style($small-800-class, $font-size-small-800, $line-height-small-800, $font-weight-small-800);
-@include quasar-text-style($small-700-class, $font-size-small-700, $line-height-small-700, $font-weight-small-700);
-@include quasar-text-style($small-600-class, $font-size-small-600, $line-height-small-600, $font-weight-small-600);
-@include quasar-text-style($small-400-class, $font-size-small-400, $line-height-small-400, $font-weight-small-400);
-@include quasar-text-style($caption-large-class, $font-size-caption-large, $line-height-caption-large, $font-weight-caption-large);
 @include quasar-text-style($caption-small-800-class, $font-size-caption-small-800, $line-height-caption-small-800, $font-weight-caption-small-800);
 @include quasar-text-style($caption-small-700-class, $font-size-caption-small-700, $line-height-caption-small-700, $font-weight-caption-small-700);
 @include quasar-text-style($caption-small-600-class, $font-size-caption-small-600, $line-height-caption-small-600, $font-weight-caption-small-600);
-@include quasar-text-style($button-large-class, $font-size-button-large, $line-height-button-large, $font-weight-button-large);
-@include quasar-text-style($button-small-class, $font-size-button-small, $line-height-button-small, $font-weight-button-small);

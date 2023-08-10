@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <CardExternal v-for="i in 6" :key="i" style="overflow: auto" :class="`card-${i} shadow-${i}`">
+      <CardExternal v-for="i in 6" :key="i" style="overflow: auto" class="q-col-xl-6 q-col-lg-6 q-col-md-5 q-col-sm-8 q-col-xs-4" :class="`card-${i} shadow-${i}`">
         <template v-slot:header>Card-{{i}}</template>
         <div class="q-pa-md text-neutral-1-text">
           <h1 class="text-h1">H1</h1>
@@ -36,9 +36,4 @@
 
 <script setup lang="ts">
 import { CardExternal } from 'app/dist/frontend'
-import { useQuasar } from 'quasar'
-
-const $q = useQuasar()
-
-$q.screen.setSizes({ sm: 300, md: 500, lg: 1000, xl: 2000 })
 </script>

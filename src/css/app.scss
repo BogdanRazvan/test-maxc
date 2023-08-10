@@ -2,3 +2,8 @@
 @import 'layout/layout.scss';
 @import 'font/typography.scss';
 @import 'colors/colors.scss';
+
+.q-page-container {
+  max-width: $max-layout-width;
+  margin: 0 auto;
+}

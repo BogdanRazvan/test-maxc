@@ -1,35 +1,151 @@
 @import "colors.variables.scss";
 
-// Neutral 0 Text Color
+/* Neutral Colours */
 .text-neutral-0-text {
   color: $neutral-0-text;
 }
 
-// Neutral 1 Text Color
 .text-neutral-1-text {
   color: $neutral-1-text;
 }
 
-// Neutral 2 Text Color
 .text-neutral-2 {
   color: $neutral-2;
 }
 
-// Neutral 3 Text Color
 .text-neutral-3-text {
   color: $neutral-3-text;
 }
 
-// Neutral 4 Text Color
 .text-neutral-4 {
   color: $neutral-4;
 }
 
-// Neutral 5 Text Color
 .text-neutral-5 {
   color: $neutral-5;
 }
 
+/* Backgrounds */
+.bg-bg-0 {
+  background-color: $bg-0;
+}
+
+.bg-bg-1 {
+  background-color: $bg-1;
+}
+
+.bg-hover-bg-hover:hover {
+  background-color: $bg-hover;
+}
+
+.bg-bg-overlay-50 {
+  background-color: $bg-overlay-50;
+}
+
+/* Status Colours */
+/* Text Color Classes */
+.text-positive-light {
+  color: $positive-light;
+}
+
+.text-negative-light {
+  color: $negative-light;
+}
+
+.text-warning-light {
+  color: $warning-light;
+}
+
+.text-info-light {
+  color: $info-light;
+}
+
+.text-overdue-light {
+  color: $overdue-light;
+}
+
+.text-overdue {
+  color: $overdue;
+}
+
+/* Background Color Classes */
+/* Text Color Classes */
+.text-positive-light {
+  color: $positive-light;
+}
+
+.text-negative-light {
+  color: $negative-light;
+}
+
+.text-warning-light {
+  color: $warning-light;
+}
+
+.text-info-light {
+  color: $info-light;
+}
+
+.text-overdue-light {
+  color: $overdue-light;
+}
+
+.text-overdue {
+  color: $overdue;
+}
+
+/* Background Color Classes */
+/* Text Color Classes */
+.text-positive-light {
+  color: $positive-light;
+}
+
+.text-negative-light {
+  color: $negative-light;
+}
+
+.text-warning-light {
+  color: $warning-light;
+}
+
+.text-info-light {
+  color: $info-light;
+}
+
+.text-overdue-light {
+  color: $overdue-light;
+}
+
+.text-overdue {
+  color: $overdue;
+}
+
+/* Background Color Classes */
+.bg-positive-light {
+  background-color: $positive-light;
+}
+
+.bg-negative-light {
+  background-color: $negative-light;
+}
+
+.bg-warning-light {
+  background-color: $warning-light;
+}
+
+.bg-info-light {
+  background-color: $info-light;
+}
+
+.bg-overdue-light {
+  background-color: $overdue-light;
+}
+
+.bg-overdue {
+  background-color: $overdue;
+}
+
+/* Gradients */
 .bg-gradient-0 {
   background: $gradient-0;
 }
